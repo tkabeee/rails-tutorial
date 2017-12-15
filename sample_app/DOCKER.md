@@ -16,20 +16,18 @@ docker-compose build
 docker-compose run --rm web rails db:migrate
 ```
 
-### アプリケーション起動
-
-```bash
-docker-compose up
-```
-
 ### bundle install
 
 ```bash
 docker-compose run --rm web rails bundle install
 ```
 
-### アプリケーション停止
+### アプリケーション起動・停止
 
 ```
+docker-compose up
 docker-compose down
+
+docker-compose start
+docker-compose stop
 ```

@@ -16,3 +16,9 @@ Railsコンソール
 ```bash
 docker-compose run --rm web rails console
 ```
+
+静的ページ生成
+
+```bash
+docker-compose run --rm web rails generate controller StaticPages home help
+```
